@@ -1,0 +1,62 @@
+/* sursa.css — Simple clean styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f0f4f8;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+h2 { text-align: center; color: #2c3e50; margin-bottom: 20px; }
+h3 { color: #34495e; margin: 25px 0 10px; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
+h4 { color: #2980b9; margin: 15px 0 8px; }
+
+.form-group { margin-bottom: 12px; }
+label { display: block; margin-bottom: 4px; font-weight: bold; color: #2c3e50; }
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+button:hover { background: #219653; }
+
+.rsa-section {
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+  background: #ecf0f1;
+  margin-bottom: 8px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - RSA</title>
+  <link rel="stylesheet" href="sursa.css">
+  <script src="https://cdn.jsdelivr.net/npm/jsencrypt@latest/bin/jsencrypt.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Student Enrollment / Sign Up</h2>
+
+    <!-- Signup Form -->
+    <form id="signupForm">
+      <div class="form-group">
+        <label>Full Name:</label>
+        <input type="text" id="fullname" required>
+      </div>
+      <div class="form-group">
+        <label>Date of Birth:</label>
+        <input type="date" id="dob" required>
+      </div>
+      <div class="form-group">
+        <label>Year Level:</label>
+        <select id="yearlevel" required>
+          <option value="">-- Select --</option>
+          <option>1st Year</option>
+          <option>2nd Year</option>
+          <option>3rd Year</option>
+          <option>4th Year</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Gender:</label>
+        <select id="gender" required>
+          <option value="">-- Select --</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Username:</label>
+        <input type="text" id="username" required>
+      </div>
+      <div class="form-group">
+        <label>Password:</label>
+        <input type="password" id="password" required>
+      </div>
+      <button type="submit">Submit & Encrypt</button>
+    </form>
+
+    <!-- Encryption/Decryption Results -->
+    <div class="results">
+      <h3>Encryption & Decryption Results</h3>
+
+      <div class="rsa-section">
+        <h4>1024-bit RSA</h4>
+        <label>Encrypted:</label>
+        <textarea id="encrypted1024" readonly></textarea>
+        <label>Decrypted:</label>
+        <textarea id="decrypted1024" readonly></textarea>
+      </div>
+
+      <div class="rsa-section">
+        <h4>3072-bit RSA</h4>
+        <label>Encrypted:</label>
+        <textarea id="encrypted3072" readonly></textarea>
+        <label>Decrypted:</label>
+        <textarea id="decrypted3072" readonly></textarea>
+      </div>
+    </div>
+    
+  </div>
+
+  <script src="sursa.js"></script>
+</body>
+</html>
